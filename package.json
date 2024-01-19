@@ -1,5 +1,5 @@
 {
-  "name": "shadcn-ui-library-starter",
+  "name": "edificeui",
   "description": "A quick library starter for React with Tailwind CSS, Vite, TypeScript and Shadcn-ui components.",
   "private": false,
   "version": "0.1.6",
