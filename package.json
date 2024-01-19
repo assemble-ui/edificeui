@@ -2,7 +2,7 @@
   "name": "edifice-ui",
   "description": "test",
   "private": false,
-  "version": "1.0.3",
+  "version": "0.0.6",
   "type": "module",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -11,10 +11,6 @@
   "files": [
     "dist"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rajeshdavidbabu/shadcn-ui-lib-starter.git"
-  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build && npm run build:styles",
