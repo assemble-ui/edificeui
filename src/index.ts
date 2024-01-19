@@ -9,3 +9,5 @@ export {
   AvatarImage,
 } from "./components/Avatar/Avatar";
 export { Alert, AlertDescription, AlertTitle } from "./components/Alert/Alert";
+
+import "../style/styles.css";
