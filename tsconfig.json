@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "target": "ES5",
     "useDefineForClassFields": true,
+    "importHelpers": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
     "skipLibCheck": false,
@@ -13,10 +14,11 @@
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react-jsxdev",
-    "outDir": "dist",
+    "jsx": "react",
+    "outDir": "dist/esm/types",
     "declaration": true,
-    "declarationMap": true,
+
+    "declarationMap": true
   },
   "include": ["./src"]
 }
