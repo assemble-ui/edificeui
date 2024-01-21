@@ -17,11 +17,6 @@ export default [
     input: "src/index.ts",
     output: [
       {
-        file: packageJson.main, // Specify your CommonJS output file
-        format: "cjs",
-        sourcemap: true,
-      },
-      {
         file: packageJson.module, // Specify your ESM output file
         format: "esm",
         sourcemap: true,
@@ -37,6 +32,7 @@ export default [
         inject: {
           insertAt: "top",
         },
+
         plugins: [tailwindcss(tailwindConfig)],
       }),
       babel({
