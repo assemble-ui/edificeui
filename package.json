@@ -2,7 +2,7 @@
   "name": "edificeui",
   "description": "A.",
   "private": false,
-  "version": "1.0.3",
+  "version": "0.1.7",
   "main": "dist/cjs/index.js",
   "type": "commonjs",
   "module": "dist/esm/index.js",
