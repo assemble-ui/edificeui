@@ -6,6 +6,9 @@ import terser from "@rollup/plugin-terser";
 import typescript from "@rollup/plugin-typescript";
 import commonjs from "@rollup/plugin-commonjs";
 import { dts } from "rollup-plugin-dts";
+import tailwindcss from "tailwindcss";
+
+const tailwindConfig = require("./tailwind.config.js");
 
 const packageJson = require("./package.json");
 
@@ -34,6 +37,7 @@ export default [
         inject: {
           insertAt: "top",
         },
+        plugins: [tailwindcss(tailwindConfig)],
       }),
       babel({
         exclude: "node_modules/**",
