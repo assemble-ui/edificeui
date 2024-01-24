@@ -9,6 +9,8 @@ import postcss from 'rollup-plugin-postcss';
 import dts from 'rollup-plugin-dts';
 import { terser } from 'rollup-plugin-terser';
 import typescriptEngine from 'typescript';
+import autoprefixer from "autoprefixer";
+import tailwind from "tailwindcss";
 
 const packageJson = JSON.parse(readFileSync('./package.json'));
 
@@ -32,7 +34,15 @@ export default [
     ],
     plugins: [
       postcss({
-        plugins: [],
+        config: {
+          path: "./postcss.config.js",
+        },
+        plugins: [
+          autoprefixer(),
+          tailwind({
+            config: "./tailwind.config.js",
+          }),
+        ],
         minimize: true,
       }),
       external({ includeDependencies: true }),
