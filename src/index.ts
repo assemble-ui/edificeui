@@ -1,4 +1,4 @@
 // components
-export * from './components/ui/button';
+export * from './components/ui/Button/button';
 
 import "./global.css"
